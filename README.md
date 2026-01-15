@@ -7,3 +7,8 @@ Inspired by [kvakirsanov/docker-telegram-desktop-frida-mtproto-logger](https://g
 ## Description
 
 Telegram uses AES-IGE encryption to transmit MTProto messages. Using Frida, the AES encryption and decryption processes are hooked, and the MTProto protocol data is extracted/output.
+
+## Requirements
+
+- Telegram 6.4.1 For linux
+- Frida core devkit(https://github.com/frida/frida/releases/)
