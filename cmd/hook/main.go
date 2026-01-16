@@ -59,7 +59,7 @@ func processMTProtoMessage(direction string, data []byte) {
 	// 메시지 본문 추출 및 디코딩
 	if len(data) >= 32+int(header.MessageLength) {
 		messageBody := data[32 : 32+header.MessageLength]
-		decode.HandleMessage(header.MessageID, &bin.Buffer{Buf: messageBody})
+		decode.HandleMessage(header.MessageID, &bin.Buffer{Buf: messageBody}, direction)
 	}
 }
 
